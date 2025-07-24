@@ -1,0 +1,36 @@
+---
+
+---
+
+<html>
+  <head>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const button = document.getElementById('scrollTopBtn');
+
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 300) {
+            button?.classList.remove('hidden');
+          } else {
+            button?.classList.add('hidden');
+          }
+        });
+
+        button?.addEventListener('click', () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button 
+      id="scrollTopBtn"
+      class="hidden fixed bottom-6 right-6 h-14 w-14 flex items-center justify-center bg-black/50 text-white p-4 rounded-full shadow-lg cursor-pointer hover:bg-gradient-to-r from-pink-500 to-purple-600 transition-opacity z-50"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M6 15l6 -6l6 6" />
+      </svg>
+    </button>
+  </body>
+</html>
