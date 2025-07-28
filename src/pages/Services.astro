@@ -1,17 +1,116 @@
 ---
+import MainLayout from '../layouts/MainLayout.astro'
 const title = "Servicios"
-const sentence = "Ofrecemos servicios de alta calidad en diseño de escenarios corporativos, stands para exposiciones, producción audiovisual, registro de eventos y desarrollo de software. Con nuestro enfoque todo en uno y nuestra experiencia en la industria, aseguramos hacer de tu próximo evento un éxito memorable."
+const sentence = "Nos enorgullece ofrecer servicios de alta calidad que abarcan desde diseño de escenarios corporativos, stands para exposiciones, producción audiovisual, registro de eventos y desarrollo de software. Con nuestro enfoque todo en uno y nuestra experiencia en la industria, estamos dedicados a hacer que tu próximo evento sea un éxito memorable."
 ---
+<MainLayout>
+  <section class="text-white">
+      <div class="pt-32 h-full min-h-screen flex items-center justify-end px-4 md:px-10 lg:px-10 bg-[url('/images/services-page.jpeg')] bg-no-repeat bg-center bg-cover relative">
+          <div class="absolute inset-0 bg-black/50 z-0"></div>
+          <div class="text-center p-4 max-w-4xl w-full z-10">
+              <h1 class="text-4xl sm:text-5xl md:text-7xl md:text-end">{ title }</h1>
+              <p class="mt-8 text-justify md:text-end sm:mt-10 text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed">
+                  { sentence }
+              </p>
 
-<section class="min-h-screen flex items-center justify-center p-6 text-white bg-[url('/public/images/services.jpeg')] bg-no-repeat bg-center bg-cover relative">
-    <div class="absolute inset-0 bg-black/50 z-0"></div>
-    <div class="text-center max-w-5xl w-full z-10">
-        <h1 class="text-4xl sm:text-5xl md:text-7xl">{ title }</h1>
-        <p class="mt-8 sm:mt-10 text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed">
-            { sentence }
-        </p>
-        <button class="mt-6 sm:mt-8 border-2 border-white rounded-md px-6 sm:px-7 py-2 sm:py-3 text-base sm:text-lg hover:bg-white hover:text-black transition-colors cursor-pointer">
-            Servicios
-        </button>
-    </div>
-</section>
+              <div class="flex justify-center md:justify-end">
+                  <button class="mt-6 sm:mt-8 border-2 border-white rounded-md px-6 sm:px-7 py-2 sm:py-3 text-base sm:text-lg hover:bg-white hover:text-black transition-colors cursor-pointer">
+                      Contáctanos
+                  </button>
+              </div>
+          </div>
+      </div>
+
+      <div class="bg-[#333333] px-6 py-10 md:py-20 md:px-20 lg:px-60 space-y-24 text-white">
+
+          <div class="flex flex-col md:flex-row md:items-center md:gap-20">
+            <div class="md:w-1/2">
+              <h3 class="text-3xl">Diseño</h3>
+              <p class="text-justify mt-4 md:text-xl">
+                Nuestro equipo de diseño ofrece servicios especializados en 
+                <strong>diseño gráfico para conceptualizar la identidad gráfica de tu evento, diseño industrial para previsualizar stands y escenarios y diseño web</strong>. 
+                Nos aseguramos que cada detalle esté perfectamente coordinado para que tu evento sea visualmente impresionante.
+              </p>
+            </div>
+            <div class="md:w-1/2 mt-6 md:mt-0">
+              <img 
+                src="/images/service-1.webp" 
+                alt="Servicio diseño grafico"
+                class="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+          
+          <div class="flex flex-col md:flex-row-reverse md:items-center md:gap-20">
+            <div class="md:w-1/2">
+              <h3 class="text-3xl">Registro y Desarrollo de Software</h3>
+              <p class="text-justify mt-4 md:text-xl">
+                En Cautiva Producciones nos aseguramos que tu evento sea lo más eficiente posible, 
+                desde el sistema de pre-registro y registro de asistentes que agiliza el acceso y 
+                recauda datos para la toma de decisiones posteriores, hasta el desarrollo de aplicaciones 
+                personalizadas integradas con el software administrativo que tu empresa o asociación utiliza.
+              </p>
+            </div>
+            <div class="md:w-1/2 mt-6 md:mt-0">
+              <img 
+                src="/images/service-2.webp" 
+                alt="Registro y desarrollo de software"
+                class="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+        
+          <div class="flex flex-col md:flex-row md:items-center md:gap-20">
+            <div class="md:w-1/2">
+              <h3 class="text-3xl">Producción AVI</h3>
+              <p class="text-justify mt-4 md:text-xl">
+                Nuestro equipo de producción audiovisual está especializado en la creación de experiencias 
+                inmersivas para eventos presenciales y virtuales, utilizando tecnología de última generación en audio, 
+                vídeo, iluminación y animaciones visuales.
+              </p>
+            </div>
+            <div class="md:w-1/2 mt-6 md:mt-0">
+              <img 
+                src="/images/service-3.webp" 
+                alt="Producción audiovisual"
+                class="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+        
+          <div class="flex flex-col md:flex-row-reverse md:items-center md:gap-20">
+            <div class="md:w-1/2">
+              <h3 class="text-3xl">Escenografía y Display</h3>
+              <p class="text-justify mt-4 md:text-xl">
+                Convertimos los diseños en realidad con la producción de display. Nos encargamos desde el montaje 
+                de stands hasta la construcción de escenarios para tu evento. Nos aseguramos que tenga la identidad e impacto que merece.
+              </p>
+            </div>
+            <div class="md:w-1/2 mt-6 md:mt-0">
+              <img 
+                src="/images/service-4.webp" 
+                alt="Escenografía y display"
+                class="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+        
+          <div class="flex flex-col md:flex-row md:items-center md:gap-20">
+            <div class="md:w-1/2">
+              <h3 class="text-3xl">Marketing Digital</h3>
+              <p class="text-justify mt-4 md:text-xl">
+                Nuestro equipo de marketing digital te ayuda a promocionar tu evento en redes sociales, 
+                generar contenido y gestionar publicidad en línea, para llegar a la audiencia ideal y lograr tus objetivos.
+              </p>
+            </div>
+            <div class="md:w-1/2 mt-6 md:mt-0">
+              <img 
+                src="/images/service-5.webp" 
+                alt="Marketing digital"
+                class="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+      </div>
+  </section>
+</MainLayout>
