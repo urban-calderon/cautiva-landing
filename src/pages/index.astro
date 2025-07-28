@@ -1,22 +1,15 @@
 ---
 import MainLayout  from '../layouts/MainLayout.astro';
-import Navbar from '../components/shared/Navbar.astro';
-import HomePage from './HomePage.astro';
-import AboutPage from './AboutPage.astro';
-import Services from './Services.astro';
+import Home from './sections/Home.astro';
+import About from './sections/About.astro';
+import Services from './sections/Services.astro';
 import Recommendation from '../components/Recommendation.astro';
-import Contact from './Contact.astro';
-import Footer from '../components/shared/Footer.astro';
-import ButtonScrollTop from '../components/ButtonScrollTop.astro';
+import Contact from './sections/Contact.astro';
 ---
-
 <MainLayout>
-	<Navbar/>
-	<HomePage/>
-	<AboutPage/>
+	<Home/>
+	<About/>
 	<Services/>
 	<Recommendation/>
 	<Contact/>
-	<Footer/>
-	<ButtonScrollTop/>
 </MainLayout>
